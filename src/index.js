@@ -1,8 +1,10 @@
 import _ from "lodash";
-import "./style.css";
+import "./css/style.css";
 import logo from "./images/instagram_logo_2000.png";
+import printMe from "./print";
 
 function component() {
+  const button = document.createElement("button");
   const element = document.createElement("div");
 
   element.innerHTML = _.join(["Hello", "Webpack", ""]);
@@ -13,6 +15,10 @@ function component() {
   image.src = logo;
   image.classList.add("logo");
   element.appendChild(image);
+
+  button.innerHTML = "Click me and check the console";
+  button.onclick = printMe;
+  element.appendChild(button);
 
   return element;
 }

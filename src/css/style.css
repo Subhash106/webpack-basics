@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "MyFont";
+  src: url(../fonts/MontserratAlternates-Black.otf) format("otf");
+  font-weight: 600;
+  font-style: italic;
+}
+
+.hello {
+  font-family: "MyFont", sans-serif;
+  color: red;
+  background-image: url(../images/instagram_logo_2000.png);
+  background-size: 50%;
+}
+
+.logo {
+  width: 40%;
+}
