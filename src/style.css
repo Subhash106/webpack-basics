@@ -1,3 +1,8 @@
 .hello {
   color: red;
+  background-image: url(./images/instagram_logo_2000.png);
+}
+
+.logo {
+  width: 40%;
 }
